@@ -12,7 +12,7 @@ use Illuminate\Support\Str;
 
 class UploadController extends Controller
 {
-    public function fileUpload(Request $request){
+    public function UploadVideo(Request $request){die("Chal gya");
  
     if($request->hasFile('uploaded_file')) {
       
