@@ -12,14 +12,14 @@ class ComposerStaticInit1be63d30087a57c1c95601841e6b9c2a
         'f598d06aa772fa33d905e87be6398fb1' => __DIR__ . '/..' . '/symfony/polyfill-intl-idn/bootstrap.php',
         '0d59ee240a4cd96ddbb4ff164fccea4d' => __DIR__ . '/..' . '/symfony/polyfill-php73/bootstrap.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
-        '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
         'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
         'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
+        '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
         'b067bc7112e384b61c701452d53a14a8' => __DIR__ . '/..' . '/mtdowling/jmespath.php/src/JmesPath.php',
-        'def43f6c87e4f8dfd0c9e1b1bab14fe8' => __DIR__ . '/..' . '/symfony/polyfill-iconv/bootstrap.php',
         '8a9dc1de0ca7e01f3e08231539562f61' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/functions.php',
+        'def43f6c87e4f8dfd0c9e1b1bab14fe8' => __DIR__ . '/..' . '/symfony/polyfill-iconv/bootstrap.php',
         '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
         'cf97c57bfe0f23854afd2f3818abb7a0' => __DIR__ . '/..' . '/zendframework/zend-diactoros/src/functions/create_uploaded_file.php',
         '9bf37a3d0dad93e29cb4e1b1bfab04e9' => __DIR__ . '/..' . '/zendframework/zend-diactoros/src/functions/marshal_headers_from_sapi.php',
@@ -102,6 +102,7 @@ class ComposerStaticInit1be63d30087a57c1c95601841e6b9c2a
             'Psr\\Container\\' => 14,
             'Prophecy\\' => 9,
             'PhpParser\\' => 10,
+            'PHPMailer\\PHPMailer\\' => 20,
         ),
         'O' => 
         array (
@@ -118,6 +119,7 @@ class ComposerStaticInit1be63d30087a57c1c95601841e6b9c2a
         'L' => 
         array (
             'League\\OAuth2\\Server\\' => 21,
+            'League\\Flysystem\\AwsS3v3\\' => 25,
             'League\\Flysystem\\' => 17,
             'League\\Event\\' => 13,
             'Lcobucci\\JWT\\' => 13,
@@ -330,6 +332,10 @@ class ComposerStaticInit1be63d30087a57c1c95601841e6b9c2a
         array (
             0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
         ),
+        'PHPMailer\\PHPMailer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
+        ),
         'Opis\\Closure\\' => 
         array (
             0 => __DIR__ . '/..' . '/opis/closure/src',
@@ -345,6 +351,10 @@ class ComposerStaticInit1be63d30087a57c1c95601841e6b9c2a
         'League\\OAuth2\\Server\\' => 
         array (
             0 => __DIR__ . '/..' . '/league/oauth2-server/src',
+        ),
+        'League\\Flysystem\\AwsS3v3\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/league/flysystem-aws-s3-v3/src',
         ),
         'League\\Flysystem\\' => 
         array (
@@ -500,14 +510,12 @@ class ComposerStaticInit1be63d30087a57c1c95601841e6b9c2a
         'App\\Auth' => __DIR__ . '/../..' . '/app/Auth.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
-        'App\\Http\\Controllers\\AuthController' => __DIR__ . '/../..' . '/app/Http/Controllers/AuthController.php',
         'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
         'App\\Http\\Controllers\\Auth\\LoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/LoginController.php',
         'App\\Http\\Controllers\\Auth\\RegisterController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/RegisterController.php',
         'App\\Http\\Controllers\\Auth\\ResetPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ResetPasswordController.php',
         'App\\Http\\Controllers\\Auth\\VerificationController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/VerificationController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
-        'App\\Http\\Controllers\\LicenseController' => __DIR__ . '/../..' . '/app/Http/Controllers/LicenseController.php',
         'App\\Http\\Controllers\\UploadController' => __DIR__ . '/../..' . '/app/Http/Controllers/UploadController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
@@ -518,7 +526,6 @@ class ComposerStaticInit1be63d30087a57c1c95601841e6b9c2a
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
         'App\\Http\\Resources\\RegisterResource' => __DIR__ . '/../..' . '/app/Http/Resources/RegisterResource.php',
-        'App\\Mail\\VerifyMail' => __DIR__ . '/../..' . '/app/Mail/VerifyMail.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
@@ -526,7 +533,6 @@ class ComposerStaticInit1be63d30087a57c1c95601841e6b9c2a
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
         'App\\Register' => __DIR__ . '/../..' . '/app/Register.php',
         'App\\User' => __DIR__ . '/../..' . '/app/User.php',
-        'App\\VerifyUser' => __DIR__ . '/../..' . '/app/VerifyUser.php',
         'Aws\\ACMPCA\\ACMPCAClient' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/ACMPCA/ACMPCAClient.php',
         'Aws\\ACMPCA\\Exception\\ACMPCAException' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/ACMPCA/Exception/ACMPCAException.php',
         'Aws\\Acm\\AcmClient' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/Acm/AcmClient.php',
@@ -659,6 +665,8 @@ class ComposerStaticInit1be63d30087a57c1c95601841e6b9c2a
         'Aws\\CodeDeploy\\Exception\\CodeDeployException' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/CodeDeploy/Exception/CodeDeployException.php',
         'Aws\\CodePipeline\\CodePipelineClient' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/CodePipeline/CodePipelineClient.php',
         'Aws\\CodePipeline\\Exception\\CodePipelineException' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/CodePipeline/Exception/CodePipelineException.php',
+        'Aws\\CodeStarNotifications\\CodeStarNotificationsClient' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/CodeStarNotifications/CodeStarNotificationsClient.php',
+        'Aws\\CodeStarNotifications\\Exception\\CodeStarNotificationsException' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/CodeStarNotifications/Exception/CodeStarNotificationsException.php',
         'Aws\\CodeStar\\CodeStarClient' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/CodeStar/CodeStarClient.php',
         'Aws\\CodeStar\\Exception\\CodeStarException' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/CodeStar/Exception/CodeStarException.php',
         'Aws\\CognitoIdentityProvider\\CognitoIdentityProviderClient' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/CognitoIdentityProvider/CognitoIdentityProviderClient.php',
@@ -1028,6 +1036,8 @@ class ComposerStaticInit1be63d30087a57c1c95601841e6b9c2a
         'Aws\\SageMakerRuntime\\SageMakerRuntimeClient' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/SageMakerRuntime/SageMakerRuntimeClient.php',
         'Aws\\SageMaker\\Exception\\SageMakerException' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/SageMaker/Exception/SageMakerException.php',
         'Aws\\SageMaker\\SageMakerClient' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/SageMaker/SageMakerClient.php',
+        'Aws\\SavingsPlans\\Exception\\SavingsPlansException' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/SavingsPlans/Exception/SavingsPlansException.php',
+        'Aws\\SavingsPlans\\SavingsPlansClient' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/SavingsPlans/SavingsPlansClient.php',
         'Aws\\Sdk' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/Sdk.php',
         'Aws\\SecretsManager\\Exception\\SecretsManagerException' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/SecretsManager/Exception/SecretsManagerException.php',
         'Aws\\SecretsManager\\SecretsManagerClient' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/SecretsManager/SecretsManagerClient.php',
@@ -2968,6 +2978,7 @@ class ComposerStaticInit1be63d30087a57c1c95601841e6b9c2a
         'League\\Flysystem\\Adapter\\Polyfill\\StreamedTrait' => __DIR__ . '/..' . '/league/flysystem/src/Adapter/Polyfill/StreamedTrait.php',
         'League\\Flysystem\\Adapter\\Polyfill\\StreamedWritingTrait' => __DIR__ . '/..' . '/league/flysystem/src/Adapter/Polyfill/StreamedWritingTrait.php',
         'League\\Flysystem\\Adapter\\SynologyFtp' => __DIR__ . '/..' . '/league/flysystem/src/Adapter/SynologyFtp.php',
+        'League\\Flysystem\\AwsS3v3\\AwsS3Adapter' => __DIR__ . '/..' . '/league/flysystem-aws-s3-v3/src/AwsS3Adapter.php',
         'League\\Flysystem\\Config' => __DIR__ . '/..' . '/league/flysystem/src/Config.php',
         'League\\Flysystem\\ConfigAwareTrait' => __DIR__ . '/..' . '/league/flysystem/src/ConfigAwareTrait.php',
         'League\\Flysystem\\Directory' => __DIR__ . '/..' . '/league/flysystem/src/Directory.php',
@@ -3271,6 +3282,11 @@ class ComposerStaticInit1be63d30087a57c1c95601841e6b9c2a
         'Opis\\Closure\\SecurityProvider' => __DIR__ . '/..' . '/opis/closure/src/SecurityProvider.php',
         'Opis\\Closure\\SelfReference' => __DIR__ . '/..' . '/opis/closure/src/SelfReference.php',
         'Opis\\Closure\\SerializableClosure' => __DIR__ . '/..' . '/opis/closure/src/SerializableClosure.php',
+        'PHPMailer\\PHPMailer\\Exception' => __DIR__ . '/..' . '/phpmailer/phpmailer/src/Exception.php',
+        'PHPMailer\\PHPMailer\\OAuth' => __DIR__ . '/..' . '/phpmailer/phpmailer/src/OAuth.php',
+        'PHPMailer\\PHPMailer\\PHPMailer' => __DIR__ . '/..' . '/phpmailer/phpmailer/src/PHPMailer.php',
+        'PHPMailer\\PHPMailer\\POP3' => __DIR__ . '/..' . '/phpmailer/phpmailer/src/POP3.php',
+        'PHPMailer\\PHPMailer\\SMTP' => __DIR__ . '/..' . '/phpmailer/phpmailer/src/SMTP.php',
         'PHPUnit\\Exception' => __DIR__ . '/..' . '/phpunit/phpunit/src/Exception.php',
         'PHPUnit\\Framework\\Assert' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert.php',
         'PHPUnit\\Framework\\AssertionFailedError' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Exception/AssertionFailedError.php',
